@@ -1,0 +1,2 @@
+
+INSERT INTO UNIVERSITY VALUES ( '1', 'SWU', 'Asok' );
