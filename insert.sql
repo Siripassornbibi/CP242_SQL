@@ -18,38 +18,70 @@ INSERT INTO DEPARTMENT VALUES ( DEPARTMENT_SEQ.NEXTVAL, 'การพยาบ�
 
 
 
--- FACULTY TABLE 10 rows checked
+-- FACULTY_INFO TABLE 10 rows checked
 CREATE SEQUENCE FACULTY_SEQ
 INCREMENT BY 1 START WITH 1;
 
-INSERT INTO FACULTY VALUES (FACULTY_SEQ.NEXTVAL,1, 'วิทยาศาสตร์');
-INSERT INTO FACULTY VALUES (FACULTY_SEQ.NEXTVAL,2, 'สถาปัตยกรรมศาสตร์');
-INSERT INTO FACULTY VALUES (FACULTY_SEQ.NEXTVAL,3, 'เภสัชศาสตร์');
+INSERT INTO FACULTY_INFO VALUES (FACULTY_SEQ.NEXTVAL, 'วิทยาศาสตร์');
+INSERT INTO FACULTY_INFO VALUES (FACULTY_SEQ.NEXTVAL, 'สถาปัตยกรรมศาสตร์');
+INSERT INTO FACULTY_INFO VALUES (FACULTY_SEQ.NEXTVAL, 'เภสัชศาสตร์');
 
-INSERT INTO FACULTY VALUES (FACULTY_SEQ.NEXTVAL,4, 'วิศวกรรมศาสตร์');
-INSERT INTO FACULTY VALUES (FACULTY_SEQ.NEXTVAL,5, 'คณะสหเวชศาสตร์');
-INSERT INTO FACULTY VALUES (FACULTY_SEQ.NEXTVAL,6, 'นิเทศศาสตร์');
+INSERT INTO FACULTY_INFO VALUES (FACULTY_SEQ.NEXTVAL, 'วิศวกรรมศาสตร์');
+INSERT INTO FACULTY_INFO VALUES (FACULTY_SEQ.NEXTVAL, 'คณะสหเวชศาสตร์');
+INSERT INTO FACULTY_INFO VALUES (FACULTY_SEQ.NEXTVAL, 'นิเทศศาสตร์');
 
-INSERT INTO FACULTY VALUES (FACULTY_SEQ.NEXTVAL,7, 'รัฐศาสตร์');
-INSERT INTO FACULTY VALUES (FACULTY_SEQ.NEXTVAL,8, 'มนุษยศาสตร์');
-INSERT INTO FACULTY VALUES (FACULTY_SEQ.NEXTVAL,9, 'นิติศาสตร์');
-INSERT INTO FACULTY VALUES (FACULTY_SEQ.NEXTVAL,10, 'พยาบาลศาสตร์');
+INSERT INTO FACULTY_INFO VALUES (FACULTY_SEQ.NEXTVAL, 'รัฐศาสตร์');
+INSERT INTO FACULTY_INFO VALUES (FACULTY_SEQ.NEXTVAL, 'มนุษยศาสตร์');
+INSERT INTO FACULTY_INFO VALUES (FACULTY_SEQ.NEXTVAL, 'นิติศาสตร์');
+INSERT INTO FACULTY_INFO VALUES (FACULTY_SEQ.NEXTVAL, 'พยาบาลศาสตร์');
+
+
+
+-- FACULTY TABLE 10 rows checked
+INSERT INTO FACULTY(FACULTY_ID,DEPARTMENT_ID) VALUES (1,1);
+INSERT INTO FACULTY(FACULTY_ID,DEPARTMENT_ID) VALUES (2,2);
+INSERT INTO FACULTY(FACULTY_ID,DEPARTMENT_ID) VALUES (3,3);
+
+INSERT INTO FACULTY(FACULTY_ID,DEPARTMENT_ID) VALUES (4,4);
+INSERT INTO FACULTY(FACULTY_ID,DEPARTMENT_ID) VALUES (5,5);
+INSERT INTO FACULTY(FACULTY_ID,DEPARTMENT_ID) VALUES (6,6);
+
+INSERT INTO FACULTY(FACULTY_ID,DEPARTMENT_ID) VALUES (7,7);
+INSERT INTO FACULTY(FACULTY_ID,DEPARTMENT_ID) VALUES (8,8);
+INSERT INTO FACULTY(FACULTY_ID,DEPARTMENT_ID) VALUES (9,9);
+INSERT INTO FACULTY(FACULTY_ID,DEPARTMENT_ID) VALUES (10,10);
+
+
+
+-- UNIVERSITY_INFO TABLE 10 rows checked
+INSERT INTO UNIVERSITY_INFO VALUES ( 'SWU', 'มหาวิทยาลัยศรีนครินทรวิโรฒ');
+INSERT INTO UNIVERSITY_INFO VALUES ( 'CU', 'จุฬาลงกรณ์มหาวิทยาลัย');
+INSERT INTO UNIVERSITY_INFO VALUES ( 'KU', 'มหาวิทยาลัยเกษตรศาสตร์');
+
+INSERT INTO UNIVERSITY_INFO VALUES ( 'TU', 'มหาวิทยาลัยธรรมศาสตร์');
+INSERT INTO UNIVERSITY_INFO VALUES ( 'MU', 'มหาวิทยาลัยมหิดล');
+INSERT INTO UNIVERSITY_INFO VALUES ( 'CMU', 'มหาวิทยาลัยเชียงใหม่');
+
+INSERT INTO UNIVERSITY_INFO VALUES ( 'KMITL', 'สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง');
+INSERT INTO UNIVERSITY_INFO VALUES ( 'BUU', 'มหาวิทยาลัยบูรพา');
+INSERT INTO UNIVERSITY_INFO VALUES ( 'KKU', 'มหาวิทยาลัยขอนแก่น');
+INSERT INTO UNIVERSITY_INFO  VALUES ( 'KMUTT', 'มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี');
 
 
 
 -- UNIVERSITY TABLE 10 rows checked
-INSERT INTO UNIVERSITY VALUES ( 'SWU', 1, 1, 'มหาวิทยาลัยศรีนครินทรวิโรฒ');
-INSERT INTO UNIVERSITY VALUES ( 'CU', 2, 2, 'จุฬาลงกรณ์มหาวิทยาลัย');
-INSERT INTO UNIVERSITY VALUES ( 'KU', 3, 3, 'มหาวิทยาลัยเกษตรศาสตร์');
+INSERT INTO UNIVERSITY VALUES ( 'SWU', 1, 1);
+INSERT INTO UNIVERSITY VALUES ( 'CU', 2, 2);
+INSERT INTO UNIVERSITY VALUES ( 'KU', 3, 3);
 
-INSERT INTO UNIVERSITY VALUES ( 'TU', 4, 4, 'มหาวิทยาลัยธรรมศาสตร์');
-INSERT INTO UNIVERSITY VALUES ( 'MU', 5, 5, 'มหาวิทยาลัยมหิดล');
-INSERT INTO UNIVERSITY VALUES ( 'CMU', 6, 6, 'มหาวิทยาลัยเชียงใหม่');
+INSERT INTO UNIVERSITY VALUES ( 'TU', 4, 4);
+INSERT INTO UNIVERSITY VALUES ( 'MU', 5, 5);
+INSERT INTO UNIVERSITY VALUES ( 'CMU', 6, 6);
 
-INSERT INTO UNIVERSITY VALUES ( 'KMITL', 7, 7, 'สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง');
-INSERT INTO UNIVERSITY VALUES ( 'BUU', 8, 8, 'มหาวิทยาลัยบูรพา');
-INSERT INTO UNIVERSITY VALUES ( 'KKU', 9, 9, 'มหาวิทยาลัยขอนแก่น');
-INSERT INTO UNIVERSITY VALUES ( 'KMUTT', 10, 10, 'มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี');
+INSERT INTO UNIVERSITY VALUES ( 'KMITL', 7, 7);
+INSERT INTO UNIVERSITY VALUES ( 'BUU', 8, 8);
+INSERT INTO UNIVERSITY VALUES ( 'KKU', 9, 9);
+INSERT INTO UNIVERSITY VALUES ( 'KMUTT', 10, 10);
 
 
 
@@ -214,15 +246,15 @@ VALUES ('2566', 'TPAT5', 300, 150001, 79986, 70015, 105012, 44988, 61.140, 42.68
 INSERT INTO SUBJECT_STAT ("YEAR", SUBJECT_ID, TOTAL_SCORE, ATTENDANT, FEMALE, MALE, NEW_APPLICANT, OLD_APPLICANT, MEAN, SD, "MIN", "MAX", "MEDIAN", "MODE")
 VALUES ('2566', 'A-LEVEL', 100, 41342, 25703, 15639, 49, 21, 39.999, 52.725, 10, 95, 35, 38);
 INSERT INTO SUBJECT_STAT ("YEAR", SUBJECT_ID, TOTAL_SCORE, ATTENDANT, FEMALE, MALE, NEW_APPLICANT, OLD_APPLICANT, MEAN, SD, "MIN", "MAX", "MEDIAN", "MODE")
-VALUES ('2566', 'A-LEVEL MATH1', 100, 36694, 22893, 13801, 44, 19, 34.779, 51.885, 10, 95, 35, 38);
+VALUES ('2566', 'A-LEVEL MATH1', 100, 36694, 22893, 13801, 44, 19, 34.779, 51.885, 10, 100, 35, 38);
 INSERT INTO SUBJECT_STAT ("YEAR", SUBJECT_ID, TOTAL_SCORE, ATTENDANT, FEMALE, MALE, NEW_APPLICANT, OLD_APPLICANT, MEAN, SD, "MIN", "MAX", "MEDIAN", "MODE")
-VALUES ('2566', 'A-LEVEL MATH2', 100, 45050, 28188, 16862, 53, 22, 55.82, 84.254, 10, 95, 35, 38);
+VALUES ('2566', 'A-LEVEL MATH2', 100, 45050, 28188, 16862, 53, 22, 55.82, 84.254, 10, 100, 35, 38);
 INSERT INTO SUBJECT_STAT ("YEAR", SUBJECT_ID, TOTAL_SCORE, ATTENDANT, FEMALE, MALE, NEW_APPLICANT, OLD_APPLICANT, MEAN, SD, "MIN", "MAX", "MEDIAN", "MODE")
 VALUES ('2566', 'A-LEVEL SCIENCE', 100, 30515, 19072, 11443, 35, 15, 88.255, 58.245, 10, 95, 35, 38);
 INSERT INTO SUBJECT_STAT ("YEAR", SUBJECT_ID, TOTAL_SCORE, ATTENDANT, FEMALE, MALE, NEW_APPLICANT, OLD_APPLICANT, MEAN, SD, "MIN", "MAX", "MEDIAN", "MODE")
 VALUES ('2566', 'A-LEVEL PHYSICS', 100, 46723, 29201, 17522, 55, 23, 42.858, 17.252, 10, 95, 35, 38);
 INSERT INTO SUBJECT_STAT ("YEAR", SUBJECT_ID, TOTAL_SCORE, ATTENDANT, FEMALE, MALE, NEW_APPLICANT, OLD_APPLICANT, MEAN, SD, "MIN", "MAX", "MEDIAN", "MODE")
-VALUES ('2566', 'A-LEVEL CHEMISTRY', 100, 33500, 20937, 12563, 39, 17)
+VALUES ('2566', 'A-LEVEL CHEMISTRY', 100, 33500, 20937, 12563, 55, 23, 42.858, 17.252, 1, 97, 30, 43);
 INSERT INTO SUBJECT_STAT ("YEAR", SUBJECT_ID, TOTAL_SCORE, ATTENDANT, FEMALE, MALE, NEW_APPLICANT, OLD_APPLICANT, MEAN, SD, "MIN", "MAX", "MEDIAN", "MODE")
 VALUES ('2566', 'A-LEVEL BIOLOGY', 100, 47779, 29862, 17917, 56, 24, 20.325, 59.999, 0, 95, 35, 38);
 INSERT INTO SUBJECT_STAT ("YEAR", SUBJECT_ID, TOTAL_SCORE, ATTENDANT, FEMALE, MALE, NEW_APPLICANT, OLD_APPLICANT, MEAN, SD, "MIN", "MAX", "MEDIAN", "MODE")
